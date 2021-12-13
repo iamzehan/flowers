@@ -2,7 +2,6 @@ from io import BytesIO
 from keras.models import model_from_json
 from PIL import Image
 import numpy as np
-from scipy.special import softmax
 from fastapi import FastAPI, UploadFile, File
 from fastapi.responses import HTMLResponse
 import tensorflow as tf
