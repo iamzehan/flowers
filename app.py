@@ -3,10 +3,9 @@ from keras.models import model_from_json
 from PIL import Image
 import numpy as np
 from scipy.special import softmax
-
 from fastapi import FastAPI, UploadFile, File
 from fastapi.responses import HTMLResponse
-
+import tensorflow as tf
 
 app = FastAPI()
 class_names=['daisy', 'dandelion', 'roses', 'sunflowers', 'tulips']
@@ -71,12 +70,11 @@ model.load_weights("./model/flower_model.h5")
 
 @app.post('/prediction/')
 async def get_flower_class(file: UploadFile = File(...)):
-#['Rooms', 'Bathroom', 'Landsize', 'Lattitude', 'Longtitude']
     file=await file.read()
     image1=Image.open(BytesIO(file))
     image=image1.resize((180,180))
     image_array = np.array(image)
     image_array= np.expand_dims(image_array, axis=0)
     predictions=model.predict(image_array)
-    score = softmax(predictions[0])
+    score = tf.nn.softmax(predictions[0])
     return {"class": class_names[np.argmax(score)], "confidence": f"{round(100 * np.max(score))}%"}
