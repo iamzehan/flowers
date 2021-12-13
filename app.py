@@ -9,7 +9,7 @@ import tensorflow as tf
 app = FastAPI()
 class_names=['daisy', 'dandelion', 'roses', 'sunflowers', 'tulips']
 
-@app.get("/",response_class=HTMLResponse)
+@app.get("/input/",response_class=HTMLResponse)
 async def main():
     content = """
 <head>
