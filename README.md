@@ -1,5 +1,7 @@
 ### * How to deploy a neural network based image classifier on the web with FastAPI
 
+### (Warning! This repository does not contain the code for training the Neural Network, we are using a pretrained saved model.)  
+
 ### * Before you go ahead and clone this repository check your python version
 
 ### * Since Tensorflow is being used in the project, python 3.9.x is used, tensorflow yet has to release a version for 3.10.x
