@@ -1,6 +1,6 @@
 ### * How to deploy a neural network based image classifier on the web with FastAPI
 
-### (Warning! This repository does not contain the code for training the Neural Network, we are using a pretrained saved model.)  
+### _(Hold up! This repository does not contain the code for training the Neural Network, we are using a pretrained saved model.)  
 
 ### * Before you go ahead and clone this repository check your python version
 
