@@ -41,3 +41,5 @@ for cmd-
 ### Checkout SwaggerUI docs, make sure you go to ```app.py``` and change this line ```app = FastAPI(docs_url=None)``` to ```app = FastAPI(docs_url='/docs')```
 
     <localhostserver>/docs
+
+# Go checkout FastAPI over at https://fastapi.tiangolo.com/tutorial/ to know more about the architecture! 
