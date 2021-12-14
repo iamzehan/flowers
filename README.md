@@ -42,4 +42,4 @@ for cmd-
 
     <localhostserver>/docs
 
-### Go checkout FastAPI over at https://fastapi.tiangolo.com/tutorial/ to know more about them! 
+### Go checkout FastAPI over at https://fastapi.tiangolo.com/tutorial/ to know more! 
