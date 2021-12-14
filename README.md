@@ -55,4 +55,4 @@ The following files are responsible for deployment
 
 *Make sure you are keeping the slugsize down to 500MB
 
-*Little tip for that would be to use the ```Tensorflow CPU version``` because most web servers don't give you the GPU fascilities for free.
+*Little tip for that would be to use the ```Tensorflow CPU version``` because most web servers don't give you the GPU fascilities for free. Since we are not training a model over the web, we don't need it.
