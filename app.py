@@ -6,10 +6,10 @@ from fastapi import FastAPI, UploadFile, File
 from fastapi.responses import HTMLResponse
 import tensorflow as tf
 
-app = FastAPI()
+app = FastAPI(docs_url=None)
 class_names=['daisy', 'dandelion', 'roses', 'sunflowers', 'tulips']
 
-@app.get("/input/",response_class=HTMLResponse)
+@app.get("/",response_class=HTMLResponse)
 async def main():
     content = """
 <head>
