@@ -53,7 +53,8 @@ for cmd-
 
 
     if __name__ == "__main__":
-        uvicorn.run("app.api:app", host="0.0.0.0", port=8000, reload=True)
+        uvicorn.run("app.api:app", host="0.0.0.0", port=<your_port_number>, reload=True) 
+  (port number can be any 4 digit number available in your machine)
     
 ### Checkout SwaggerUI docs, make sure you go to ```app.py``` and change this line ```app = FastAPI(docs_url=None)``` to ```app = FastAPI(docs_url='/docs')```
 
