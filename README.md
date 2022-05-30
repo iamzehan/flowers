@@ -37,6 +37,23 @@ for cmd-
 ### Run the app
 
     uvicorn app:app --reload
+ 
+ 
+## Run on localhost
+    
+    localhost:8000
+  
+  
+## You can also change the Port to your liking
+
+ # In main.py write this program below
+ 
+ 
+    import uvicorn
+
+
+    if __name__ == "__main__":
+        uvicorn.run("app.api:app", host="0.0.0.0", port=8000, reload=True)
     
 ### Checkout SwaggerUI docs, make sure you go to ```app.py``` and change this line ```app = FastAPI(docs_url=None)``` to ```app = FastAPI(docs_url='/docs')```
 
